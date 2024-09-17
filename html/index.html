@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chef's Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header part Start -->
+
+    <header class="flex justify-between mt-2 mx-auto">
+      <h1>Recipe Calories</h1>
+      <nav class="flex list-none gap-4">
+        <li>Home</li>
+        <li>Recipes</li>
+        <li>About</li>
+        <li>Search</li>
+      </nav>
+
+      <div class="flex">
+        <input type="text" placeholder="Search" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+          />
+        </svg>
+      </div>
+    </header>
+    <!-- Header Part End -->
+
+    <!-- hero part start -->
+    <div class="hero-section grid place-content-center text-white">
+      <div>
+        <h1 class="text-5xl text-center font-bold">
+          Discover an exceptional cooking
+          <span class="block">class tailored for you!</span>
+        </h1>
+        <p class="text-xl mt-2 mb-2">
+          Learn to create delicious recipes while keeping track of calories to
+          support your healthy lifestyle.
+        </p>
+        <div class="text-center mt-2">
+          <button
+            style="background-color: #0be58a"
+            class="p-4 rounded-full border text-black font-bold"
+          >
+            Explore Now
+          </button>
+          <button class="rounded-full border-2 p-4 ml-2">Our Feedback</button>
+        </div>
+      </div>
+    </div>
+    <!-- hero part end -->
+    <div class="p-8">
+      <div class="text-center font-bold text-xl mb-6">Our Recipes</div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Corrected this line -->
+        <!-- Recipe cards -->
+        <div class="bg-white p-4 shadow rounded">
+          <img
+            src="path_to_your_spaghetti_image.jpg"
+            alt="Spaghetti Bolognese"
+            class="rounded mb-4"
+          />
+          <div class="font-bold">Spaghetti Bolognese</div>
+          <div>Classic Italian pasta dish with savory meat sauce.</div>
+          <div class="border"></div>
+          <div class="text-sm mt-4">
+            <p>Ingredients: 6</p>
+            <ul>
+              <li>500g ground beef</li>
+              <li>1 onion, chopped</li>
+              <li>2 cloves garlic, minced</li>
+            </ul>
+            <div>30 minutes | 600 calories</div>
+            <button
+              class="mt-4 bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+            >
+              Want to Cook
+            </button>
+          </div>
+        </div>
+        <div class="bg-white p-4 shadow rounded">
+          <img
+            src="path_to_your_salad_image.jpg"
+            alt="Chicken Caesar Salad"
+            class="rounded mb-4"
+          />
+          <div class="font-bold">Chicken Caesar Salad</div>
+          <div>Classic Italian pasta dish with savory meat sauce.</div>
+          <div class="border"></div>
+          <div class="text-sm mt-4">
+            <p>Ingredients: 6</p>
+            <ul>
+              <li>500g ground beef</li>
+              <li>1 onion, chopped</li>
+              <li>2 cloves garlic, minced</li>
+            </ul>
+            <div>30 minutes | 600 calories</div>
+            <button
+              class="mt-4 bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+            >
+              Want to Cook
+            </button>
+          </div>
+        </div>
+        <!-- Right column for stats with two-part table and specific headers -->
+        <div class="md:col-span-1 bg-white p-4 shadow rounded">
+          <table class="w-full text-sm divide-y divide-gray-200">
+            <!-- First part: Want to cook -->
+            <thead>
+              <tr class="bg-gray-100">
+                <th colspan="3" class="text-left p-2 font-bold">
+                  Want to cook: 01
+                </th>
+              </tr>
+              <tr class="bg-gray-50">
+                <th class="text-left p-2">Name</th>
+                <th class="text-left p-2">Time</th>
+                <th class="text-left p-2">Calories</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-2">Spaghetti Bolognese</td>
+                <td class="p-2">30 min</td>
+                <td class="p-2">600 cal</td>
+              </tr>
+            </tbody>
+
+            <!-- Second part: Currently cooking -->
+            <thead class="mt-4">
+              <tr class="bg-gray-100">
+                <th colspan="3" class="text-left p-2 font-bold">
+                  Currently cooking: 02
+                </th>
+              </tr>
+              <tr class="bg-gray-50">
+                <th class="text-left p-2">Name</th>
+                <th class="text-left p-2">Time</th>
+                <th class="text-left p-2">Calories</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-2">Spaghetti Bolognese</td>
+                <td class="p-2">30 min</td>
+                <td class="p-2">600 cal</td>
+              </tr>
+              <tr>
+                <td class="p-2">Chicken Caesar Salad</td>
+                <td class="p-2">20 min</td>
+                <td class="p-2">400 cal</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
