@@ -1,8 +1,16 @@
 import { useEffect, useState } from "react";
 import Recipe from "./Recipe";
+import RecipeTable from "./RecipeTable";
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
+  const [wantToCook, setWantToCook] = useState([]);
+
+  const handleWantToCook = (recipe) => {
+    const newWantToCook = [...wantToCook, recipe];
+    // console.log(newWantToCook);
+    setWantToCook(newWantToCook);
+  };
 
   useEffect(() => {
     const recipesData = async () => {
@@ -21,15 +29,21 @@ const Recipes = () => {
   return (
     <div>
       <h1 className="text-5xl text-center mb-4">Our Recipes</h1>
-      <div className="grid md:grid-cols-4">
-        <div className="border md:col-span-3">
+      <div className="grid md:grid-cols-3">
+        <div className="border  md:col-span-2">
           <div className="grid md:grid-cols-2 gap-4">
             {recipes.map((recipe) => (
-              <Recipe key={recipe.id} recipe={recipe} />
+              <Recipe
+                key={recipe.recipe_id}
+                recipe={recipe}
+                handleWantToCook={handleWantToCook}
+              />
             ))}
           </div>
         </div>
-        <div className="border">This is for table</div>
+        <div className="border ">
+          <RecipeTable />
+        </div>
       </div>
     </div>
   );
