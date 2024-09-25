@@ -42,7 +42,7 @@ const Recipes = () => {
           </div>
         </div>
         <div className="border ">
-          <RecipeTable />
+          <RecipeTable wantToCook={wantToCook} />
         </div>
       </div>
     </div>

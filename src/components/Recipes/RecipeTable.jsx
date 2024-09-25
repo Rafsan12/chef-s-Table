@@ -1,8 +1,11 @@
-const RecipeTable = () => {
+/* eslint-disable react/prop-types */
+const RecipeTable = ({ wantToCook }) => {
   return (
     <div>
       <div className="overflow-x-auto">
-        <h1 className="text-3xl text-center mb-2 ">Want to cook: 01</h1>
+        <h1 className="text-3xl text-center mb-2 ">
+          Want to cook: {wantToCook.length}
+        </h1>
         <table className="table">
           {/* head */}
           <thead>
