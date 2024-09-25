@@ -4,12 +4,12 @@ import RecipeTable from "./RecipeTable";
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
-  const [wantToCook, setWantToCook] = useState([]);
+  const [wantToCooks, setWantToCooks] = useState([]);
 
   const handleWantToCook = (recipe) => {
-    const newWantToCook = [...wantToCook, recipe];
+    const newWantToCook = [...wantToCooks, recipe];
     // console.log(newWantToCook);
-    setWantToCook(newWantToCook);
+    setWantToCooks(newWantToCook);
   };
 
   useEffect(() => {
@@ -42,7 +42,7 @@ const Recipes = () => {
           </div>
         </div>
         <div className="border ">
-          <RecipeTable wantToCook={wantToCook} />
+          <RecipeTable wantToCooks={wantToCooks} />
         </div>
       </div>
     </div>

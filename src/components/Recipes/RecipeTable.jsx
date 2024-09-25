@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-const RecipeTable = ({ wantToCook }) => {
+const RecipeTable = ({ wantToCooks }) => {
   return (
     <div>
       <div className="overflow-x-auto">
         <h1 className="text-3xl text-center mb-2 ">
-          Want to cook: {wantToCook.length}
+          Want to cook: {wantToCooks.length}
         </h1>
         <table className="table">
           {/* head */}
@@ -17,27 +17,25 @@ const RecipeTable = ({ wantToCook }) => {
             </tr>
           </thead>
           <tbody>
-            {/* row 1 */}
-            <tr className="bg-base-200">
-              <th>1</th>
-              <td>Cy Ganderton</td>
-              <td>Quality Control Specialist</td>
-              <td>Blue</td>
-            </tr>
-            {/* row 2 */}
-            <tr>
-              <th>2</th>
-              <td>Hart Hagerty</td>
-              <td>Desktop Support Technician</td>
-              <td>Purple</td>
-            </tr>
-            {/* row 3 */}
-            <tr>
-              <th>3</th>
-              <td>Brice Swyre</td>
-              <td>Tax Accountant</td>
-              <td>Red</td>
-            </tr>
+            {wantToCooks.length > 0 ? (
+              wantToCooks.map((recipe, index) => (
+                <tr key={recipe.recipe_id}>
+                  <th>{index + 1}</th>
+                  <td>{recipe.recipe_name}</td>
+                  <td>{recipe.cooking_time} minutes</td>
+                  <td>{recipe.calories} kcal</td>
+                  <button className="mt-4 border-2 bg bg-orange-400 text-black mr-2 px-4">
+                    Preparing
+                  </button>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan="4" className="text-center">
+                  No recipes selected yet.
+                </td>
+              </tr>
+            )}
           </tbody>
         </table>
       </div>
