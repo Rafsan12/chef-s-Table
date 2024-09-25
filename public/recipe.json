@@ -1,112 +1,110 @@
-{
-  "recipes": [
-    {
-      "recipe_id": 1,
-      "recipe_image": "https://i.ibb.co.com/10SKMCR/DALL-E-2024-09-18-20-57-08-A-vibrant-food-card-image-for-Spicy-Basil-Chicken-Stir-Fry-The-image-shou.webp",
-      "recipe_name": "Spicy Basil Chicken Stir-Fry",
-      "short_description": "A quick and delicious chicken stir-fry with spicy basil and vegetables.",
-      "ingredients": [
-        "500 g chicken breast",
-        "100 g basil leaves",
-        "2 bell peppers",
-        "1 onion",
-        "3 cloves garlic",
-        "2 tbsp soy sauce",
-        "1 tbsp chili paste",
-        "2 tbsp olive oil"
-      ],
-      "preparing_time": "20 min",
-      "calories": "350 calories"
-    },
-    {
-      "recipe_id": 2,
-      "recipe_image": "https://i.ibb.co.com/y4Nv2KP/DALL-E-2024-09-18-20-57-11-A-delicious-food-card-image-for-Creamy-Mushroom-Pasta-The-image-should-sh.webp",
-      "recipe_name": "Creamy Mushroom Pasta",
-      "short_description": "A rich and creamy pasta dish with sautéed mushrooms and garlic.",
-      "ingredients": [
-        "300 g pasta",
-        "200 g mushrooms",
-        "150 ml heavy cream",
-        "3 cloves garlic",
-        "1 onion",
-        "50 g Parmesan cheese",
-        "2 tbsp butter",
-        "Salt and pepper to taste"
-      ],
-      "preparing_time": "30 min",
-      "calories": "480 calories"
-    },
-    {
-      "recipe_id": 3,
-      "recipe_image": "https://example.com/ai-generated/recipe3.jpg",
-      "recipe_name": "Classic Beef Tacos",
-      "short_description": "Tacos filled with seasoned ground beef, fresh veggies, and cheese.",
-      "ingredients": [
-        "400 g ground beef",
-        "8 taco shells",
-        "1 onion",
-        "1 tomato",
-        "100 g shredded lettuce",
-        "100 g cheddar cheese",
-        "2 tbsp taco seasoning",
-        "2 tbsp olive oil"
-      ],
-      "preparing_time": "25 min",
-      "calories": "450 calories"
-    },
-    {
-      "recipe_id": 4,
-      "recipe_image": "https://example.com/ai-generated/recipe4.jpg",
-      "recipe_name": "Vegetable Curry",
-      "short_description": "A hearty and flavorful vegetable curry made with a blend of spices.",
-      "ingredients": [
-        "300 g cauliflower",
-        "2 potatoes",
-        "200 g carrots",
-        "1 can coconut milk",
-        "2 tbsp curry powder",
-        "1 onion",
-        "3 cloves garlic",
-        "2 tbsp olive oil",
-        "Salt to taste"
-      ],
-      "preparing_time": "40 min",
-      "calories": "320 calories"
-    },
-    {
-      "recipe_id": 5,
-      "recipe_image": "https://example.com/ai-generated/recipe5.jpg",
-      "recipe_name": "Grilled Lemon Herb Salmon",
-      "short_description": "Salmon fillets marinated in lemon and herbs, then grilled to perfection.",
-      "ingredients": [
-        "4 salmon fillets",
-        "2 lemons",
-        "3 cloves garlic",
-        "2 tbsp olive oil",
-        "1 tbsp fresh dill",
-        "Salt and pepper to taste"
-      ],
-      "preparing_time": "25 min",
-      "calories": "280 calories"
-    },
-    {
-      "recipe_id": 6,
-      "recipe_image": "https://example.com/ai-generated/recipe6.jpg",
-      "recipe_name": "Chocolate Chip Banana Bread",
-      "short_description": "Moist and delicious banana bread loaded with chocolate chips.",
-      "ingredients": [
-        "3 ripe bananas",
-        "200 g flour",
-        "100 g sugar",
-        "2 eggs",
-        "100 g chocolate chips",
-        "1 tsp baking powder",
-        "1/2 tsp baking soda",
-        "1/2 cup butter",
-        "1 tsp vanilla extract"
-      ],
-      "preparing_time": "60 min",
-      "calories": "320 calories"
-    }
-  ]
-}
+[
+  {
+    "recipe_id": 1,
+    "recipe_image": "https://i.ibb.co.com/10SKMCR/DALL-E-2024-09-18-20-57-08-A-vibrant-food-card-image-for-Spicy-Basil-Chicken-Stir-Fry-The-image-shou.webp",
+    "recipe_name": "Spicy Basil Chicken Stir-Fry",
+    "short_description": "A quick and delicious chicken stir-fry with spicy basil and vegetables.",
+    "ingredients": [
+      "500 g chicken breast",
+      "100 g basil leaves",
+      "2 bell peppers",
+      "1 onion",
+      "3 cloves garlic",
+      "2 tbsp soy sauce",
+      "1 tbsp chili paste",
+      "2 tbsp olive oil"
+    ],
+    "preparing_time": "20 min",
+    "calories": "350 calories"
+  },
+  {
+    "recipe_id": 2,
+    "recipe_image": "https://i.ibb.co.com/y4Nv2KP/DALL-E-2024-09-18-20-57-11-A-delicious-food-card-image-for-Creamy-Mushroom-Pasta-The-image-should-sh.webp",
+    "recipe_name": "Creamy Mushroom Pasta",
+    "short_description": "A rich and creamy pasta dish with sautéed mushrooms and garlic.",
+    "ingredients": [
+      "300 g pasta",
+      "200 g mushrooms",
+      "150 ml heavy cream",
+      "3 cloves garlic",
+      "1 onion",
+      "50 g Parmesan cheese",
+      "2 tbsp butter",
+      "Salt and pepper to taste"
+    ],
+    "preparing_time": "30 min",
+    "calories": "480 calories"
+  },
+  {
+    "recipe_id": 3,
+    "recipe_image": "https://i.ibb.co.com/GVq3Fqv/DALL-E-2024-09-24-22-05-52-A-single-food-card-featuring-Classic-Beef-Tacos-The-image-shows-a-delicio.webp",
+    "recipe_name": "Classic Beef Tacos",
+    "short_description": "Tacos filled with seasoned ground beef, fresh veggies, and cheese.",
+    "ingredients": [
+      "400 g ground beef",
+      "8 taco shells",
+      "1 onion",
+      "1 tomato",
+      "100 g shredded lettuce",
+      "100 g cheddar cheese",
+      "2 tbsp taco seasoning",
+      "2 tbsp olive oil"
+    ],
+    "preparing_time": "25 min",
+    "calories": "450 calories"
+  },
+  {
+    "recipe_id": 4,
+    "recipe_image": "https://example.com/ai-generated/recipe4.jpg",
+    "recipe_name": "Vegetable Curry",
+    "short_description": "A hearty and flavorful vegetable curry made with a blend of spices.",
+    "ingredients": [
+      "300 g cauliflower",
+      "2 potatoes",
+      "200 g carrots",
+      "1 can coconut milk",
+      "2 tbsp curry powder",
+      "1 onion",
+      "3 cloves garlic",
+      "2 tbsp olive oil",
+      "Salt to taste"
+    ],
+    "preparing_time": "40 min",
+    "calories": "320 calories"
+  },
+  {
+    "recipe_id": 5,
+    "recipe_image": "https://i.ibb.co.com/hgVqdpQ/DALL-E-2024-09-24-22-22-23-A-gourmet-food-card-image-for-Grilled-Lemon-Herb-Salmon-The-image-should.webp",
+    "recipe_name": "Grilled Lemon Herb Salmon",
+    "short_description": "Salmon fillets marinated in lemon and herbs, then grilled to perfection.",
+    "ingredients": [
+      "4 salmon fillets",
+      "2 lemons",
+      "3 cloves garlic",
+      "2 tbsp olive oil",
+      "1 tbsp fresh dill",
+      "Salt and pepper to taste"
+    ],
+    "preparing_time": "25 min",
+    "calories": "280 calories"
+  },
+  {
+    "recipe_id": 6,
+    "recipe_image": "https://i.ibb.co.com/zRbYk5Z/DALL-E-2024-09-24-22-36-32-A-visually-appealing-food-card-featuring-Chocolate-Chip-Banana-Bread-The.webp",
+    "recipe_name": "Chocolate Chip Banana Bread",
+    "short_description": "Moist and delicious banana bread loaded with chocolate chips.",
+    "ingredients": [
+      "3 ripe bananas",
+      "200 g flour",
+      "100 g sugar",
+      "2 eggs",
+      "100 g chocolate chips",
+      "1 tsp baking powder",
+      "1/2 tsp baking soda",
+      "1/2 cup butter",
+      "1 tsp vanilla extract"
+    ],
+    "preparing_time": "60 min",
+    "calories": "320 calories"
+  }
+]
