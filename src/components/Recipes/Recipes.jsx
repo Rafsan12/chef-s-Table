@@ -28,9 +28,9 @@ const Recipes = () => {
 
   return (
     <div>
-      <h1 className="text-5xl text-center mb-4">Our Recipes</h1>
+      <h1 className="text-5xl text-center mb-8 mt-8">Our Recipes</h1>
       <div className="grid md:grid-cols-3">
-        <div className="border  md:col-span-2">
+        <div className="  md:col-span-2">
           <div className="grid md:grid-cols-2 gap-4">
             {recipes.map((recipe) => (
               <Recipe
@@ -41,7 +41,7 @@ const Recipes = () => {
             ))}
           </div>
         </div>
-        <div className="border ">
+        <div>
           <RecipeTable wantToCooks={wantToCooks} />
         </div>
       </div>
