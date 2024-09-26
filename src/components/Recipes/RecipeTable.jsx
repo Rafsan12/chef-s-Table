@@ -1,5 +1,14 @@
+import { useState } from "react";
+import Currently from "./Currently";
+
 /* eslint-disable react/prop-types */
 const RecipeTable = ({ wantToCooks }) => {
+  const [currentCook, setCurrentCook] = useState([]);
+
+  const handlePreparingCook = (recipe) => {
+    const newCurrentCook = [...currentCook, recipe];
+    setCurrentCook(newCurrentCook);
+  };
   return (
     <div>
       <div className="overflow-x-auto">
@@ -22,9 +31,12 @@ const RecipeTable = ({ wantToCooks }) => {
                 <tr key={recipe.recipe_id}>
                   <th>{index + 1}</th>
                   <td>{recipe.recipe_name}</td>
-                  <td>{recipe.cooking_time} minutes</td>
+                  <td>{recipe.preparing_time} minutes</td>
                   <td>{recipe.calories} kcal</td>
-                  <button className="mt-4 border-2 bg bg-orange-400 text-black mr-2 px-4">
+                  <button
+                    onClick={() => handlePreparingCook(recipe)}
+                    className="mt-4 border border-sky-600	 bg bg-orange-400 text-black mr-2 px-4 rounded-full py-2"
+                  >
                     Preparing
                   </button>
                 </tr>
@@ -38,6 +50,10 @@ const RecipeTable = ({ wantToCooks }) => {
             )}
           </tbody>
         </table>
+      </div>
+
+      <div className="mt-8">
+        <Currently currentCook={currentCook} />
       </div>
     </div>
   );
