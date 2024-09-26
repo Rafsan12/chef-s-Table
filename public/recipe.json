@@ -14,8 +14,8 @@
       "1 tbsp chili paste",
       "2 tbsp olive oil"
     ],
-    "preparing_time": "20 min",
-    "calories": "350 calories"
+    "preparing_time": 20,
+    "calories": 350
   },
   {
     "recipe_id": 2,
@@ -32,8 +32,8 @@
       "2 tbsp butter",
       "Salt and pepper to taste"
     ],
-    "preparing_time": "30 min",
-    "calories": "480 calories"
+    "preparing_time": 30,
+    "calories": 480
   },
   {
     "recipe_id": 3,
@@ -50,8 +50,8 @@
       "2 tbsp taco seasoning",
       "2 tbsp olive oil"
     ],
-    "preparing_time": "25 min",
-    "calories": "450 calories"
+    "preparing_time": 25,
+    "calories": 450
   },
   {
     "recipe_id": 4,
@@ -69,8 +69,8 @@
       "2 tbsp olive oil",
       "Salt to taste"
     ],
-    "preparing_time": "40 min",
-    "calories": "320 calories"
+    "preparing_time": 40,
+    "calories": 320
   },
   {
     "recipe_id": 5,
@@ -85,8 +85,8 @@
       "1 tbsp fresh dill",
       "Salt and pepper to taste"
     ],
-    "preparing_time": "25 min",
-    "calories": "280 calories"
+    "preparing_time": 25,
+    "calories": 280
   },
   {
     "recipe_id": 6,
@@ -104,7 +104,7 @@
       "1/2 cup butter",
       "1 tsp vanilla extract"
     ],
-    "preparing_time": "60 min",
-    "calories": "320 calories"
+    "preparing_time": 60,
+    "calories": 320
   }
 ]

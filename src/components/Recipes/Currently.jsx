@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+
 const Currently = ({ currentCook }) => {
   const totalTime = currentCook.reduce(
     (sum, recipe) => sum + recipe.preparing_time,
@@ -9,6 +10,7 @@ const Currently = ({ currentCook }) => {
     (sum, recipe) => sum + recipe.calories,
     0
   );
+
   return (
     <div>
       <div className="overflow-x-auto">
@@ -46,7 +48,7 @@ const Currently = ({ currentCook }) => {
         </table>
       </div>
 
-      <div className="mt-4 text-center">
+      <div className="mt-4 text-center text-xl">
         <p>Total Time: {totalTime} minutes</p>
         <p>Total Calories: {totalCalories} kcal</p>
       </div>
