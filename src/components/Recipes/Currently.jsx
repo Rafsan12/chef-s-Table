@@ -1,6 +1,16 @@
 /* eslint-disable react/prop-types */
+import { useEffect } from "react";
+import { getStoredCookRecipe } from "../../utlity/LocalStroage";
 
 const Currently = ({ currentCook }) => {
+  useEffect(() => {
+    const storedRecipeIds = getStoredCookRecipe();
+
+    const storedRecipes = currentCook.filter((recipe) =>
+      storedRecipeIds.includes(recipe.recipe_id)
+    );
+  }, [currentCook]);
+
   const totalTime = currentCook.reduce(
     (sum, recipe) => sum + recipe.preparing_time,
     0
