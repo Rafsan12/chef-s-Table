@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { getStoredCookRecipe, saveCookRecipe } from "../../utlity/LocalStroage";
 import Recipe from "./Recipe";
 import RecipeTable from "./RecipeTable";
 
@@ -10,7 +11,17 @@ const Recipes = () => {
     const newWantToCook = [...wantToCooks, recipe];
     // console.log(newWantToCook);
     setWantToCooks(newWantToCook);
+
+    saveCookRecipe(recipe.recipe_id);
   };
+
+  useEffect(() => {
+    const storedRecipeIds = getStoredCookRecipe();
+    const storedRecipes = recipes.filter((recipe) =>
+      storedRecipeIds.includes(recipe.recipe_id)
+    );
+    setWantToCooks(storedRecipes);
+  }, [recipes]);
 
   useEffect(() => {
     const recipesData = async () => {
